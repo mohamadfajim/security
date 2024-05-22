@@ -4,6 +4,7 @@ ufw allow 1000:2999/udp
 ufw allow 22/tcp
 ufw allow 22/tcp
 ufw enable
+
 ````
 
 
@@ -62,21 +63,7 @@ iptables -A OUTPUT -o eth0 -d 223.202.0.0/16 -j DROP
 iptables -A OUTPUT -o eth0 -d 194.5.192.0/19 -j DROP
 iptables -A OUTPUT -o eth0 -d 209.237.192.0/18 -j DROP
 iptables -A OUTPUT -o eth0 -d 169.254.0.0/16 -j DROP
-````
 
-````
-iptables -A OUTPUT -p tcp -s 0/0 -d 141.101.0.0/16 -j DROP
-iptables -A OUTPUT -p udp -s 0/0 -d 141.101.0.0/16 -j DROP
-iptables -A OUTPUT -p tcp -s 0/0 -d 173.245.0.0/16 -j DROP
-iptables -A OUTPUT -p udp -s 0/0 -d 173.245.0.0/16 -j DROP
-iptables -A OUTPUT -p tcp -s 0/0 -d  10.0.0.0/8 -j DROP
-iptables -A OUTPUT -p udp -s 0/0 -d 10.0.0.0/8 -j DROP
-iptables -A OUTPUT -p tcp -s 0/0 -d 172.16.0.0/12 -j DROP
-iptables -A OUTPUT -p udp -s 0/0 -d 172.16.0.0/12 -j DROP
-iptables -A OUTPUT -p tcp -s 0/0 -d 192.168.0.0/16 -j DROP
-iptables -A OUTPUT -p udp -s 0/0 -d 192.168.0.0/16 -j DROP
-iptables -A OUTPUT -p tcp -s 0/0 -d 100.64.0.0/10 -j DROP
-iptables -A OUTPUT -p udp -s 0/0 -d 100.64.0.0/10 -j DROP
 ````
 
 
@@ -92,12 +79,27 @@ iptables -A OUTPUT -p udp -s 0/0 -d 100.64.0.0/10 -j DROP
 iptables -A OUTPUT -p tcp -s 0/0 -d 141.101.78.0/23 -j DROP
 iptables -A OUTPUT -p tcp -s 0/0 -d 173.245.48.0/20 -j DROP
 iptables -A OUTPUT -p tcp -s 0/0 -d 192.0.2.0/24 -j DROP
+iptables -A OUTPUT -p tcp -s 0/0 -d 141.101.0.0/16 -j DROP
+iptables -A OUTPUT -p udp -s 0/0 -d 141.101.0.0/16 -j DROP
+iptables -A OUTPUT -p tcp -s 0/0 -d 173.245.0.0/16 -j DROP
+iptables -A OUTPUT -p udp -s 0/0 -d 173.245.0.0/16 -j DROP
+iptables -A OUTPUT -p tcp -s 0/0 -d  10.0.0.0/8 -j DROP
+iptables -A OUTPUT -p udp -s 0/0 -d 10.0.0.0/8 -j DROP
+iptables -A OUTPUT -p tcp -s 0/0 -d 172.16.0.0/12 -j DROP
+iptables -A OUTPUT -p udp -s 0/0 -d 172.16.0.0/12 -j DROP
+iptables -A OUTPUT -p tcp -s 0/0 -d 192.168.0.0/16 -j DROP
+iptables -A OUTPUT -p udp -s 0/0 -d 192.168.0.0/16 -j DROP
+iptables -A OUTPUT -p tcp -s 0/0 -d 100.64.0.0/10 -j DROP
+iptables -A OUTPUT -p udp -s 0/0 -d 100.64.0.0/10 -j DROP
+
 ````
 
 ````
 iptables-save
+
 ````
 
 ````
 wget https://raw.githubusercontent.com/mohamadfajim/InstallSSH/main/blockpublictorrent-iptables-main/bt.sh && chmod +x bt.sh && bash bt.sh
+
 ````

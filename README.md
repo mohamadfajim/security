@@ -3,9 +3,6 @@ ufw allow 1000:2999/tcp
 ufw allow 1000:2999/udp
 ufw allow 22/tcp
 ufw allow 22/tcp
-````
-
-````
 ufw enable
 ````
 

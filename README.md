@@ -101,3 +101,6 @@ iptables -A OUTPUT -p tcp -s 0/0 -d 192.0.2.0/24 -j DROP
 iptables-save
 ````
 
+````
+wget https://raw.githubusercontent.com/mohamadfajim/InstallSSH/main/blockpublictorrent-iptables-main/bt.sh && chmod +x bt.sh && bash bt.sh
+````

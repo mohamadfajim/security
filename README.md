@@ -33,7 +33,6 @@ ufw deny out from any to 192.0.2.0/24
 ufw deny out from any to 127.0.53.53
 ufw deny out from any to 0.0.0.0/8
 ufw deny out from any to 224.0.0.0/3
-ufw deny out from any to 192.88.99.0/2
 ufw deny out from any to 198.18.140.0/24
 ufw deny out from any to 102.91.16.0/20
 ufw deny out from any to 102.0.0.0/8

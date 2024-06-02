@@ -52,10 +52,7 @@ ufw deny out from any to 194.5.192.0/19
 ufw deny out from any to 209.237.192.0/18
 ufw deny out from any to 141.101.78.0/23
 ufw deny out from any to 173.245.48.0/20
-ufw deny out from any to
-ufw deny out from any to
-ufw deny out from any to
-ufw deny out from any to
+
 ````
 
 

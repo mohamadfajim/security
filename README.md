@@ -1,6 +1,6 @@
 ````
-ufw allow 1000:2999/tcp
-ufw allow 1000:2999/udp
+ufw allow 1000:1999/tcp
+ufw allow 1000:1999/udp
 ufw allow 22/tcp
 ufw allow 22/udp
 ufw enable
@@ -99,7 +99,4 @@ iptables-save
 
 ````
 
-````
-wget https://raw.githubusercontent.com/mohamadfajim/InstallSSH/main/blockpublictorrent-iptables-main/bt.sh && chmod +x bt.sh && bash bt.sh
 
-````

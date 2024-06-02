@@ -25,8 +25,6 @@ ufw deny out from any to 1.2.3.0/24
 ufw deny out from any to 102.91.14.0/23
 ufw deny out from any to 123.44.0.0/15
 ufw deny out from any to 200.0.0.0/8
-ufw deny out from any to 169.254.0.0/16
-ufw deny out from any to 198.18.0.0/15
 ufw deny out from any to 198.51.100.0/24
 ufw deny out from any to 203.0.113.0/24
 ufw deny out from any to 224.0.0.0/4
@@ -36,17 +34,11 @@ ufw deny out from any to 127.0.53.53
 ufw deny out from any to 0.0.0.0/8
 ufw deny out from any to 224.0.0.0/3
 ufw deny out from any to 192.88.99.0/2
-ufw deny out from any to 169.254.0.0/16
 ufw deny out from any to 198.18.140.0/24
-ufw deny out from any to 1.2.3.0/24
-ufw deny out from any to 102.91.14.0/23
 ufw deny out from any to 102.91.16.0/20
-ufw deny out from any to 123.44.0.0/15
 ufw deny out from any to 102.0.0.0/8
-ufw deny out from any to 198.18.0.0/15
 ufw deny out from any to 127.0.0.0/8
 ufw deny out from any to 240.0.0.0/4
-ufw deny out from any to 192.88.99.0/24
 ufw deny out from any to 223.202.0.0/16
 ufw deny out from any to 194.5.192.0/19
 ufw deny out from any to 209.237.192.0/18
@@ -55,5 +47,8 @@ ufw deny out from any to 173.245.48.0/20
 
 ````
 
+````
+ufw enable
 
+````
 

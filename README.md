@@ -1,8 +1,8 @@
 ````
-ufw allow 1000:1999/tcp
-ufw allow 1000:1999/udp
-ufw allow 443/tcp
-ufw allow 443/udp
+ufw allow 1000:1100/tcp
+ufw allow 1000:1100/udp
+ufw allow 1500/tcp
+ufw allow 1500/udp
 ufw allow 22/tcp
 ufw allow 22/udp
 ufw allow 2053/tcp

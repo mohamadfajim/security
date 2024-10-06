@@ -1,6 +1,10 @@
 ````
 ufw allow 5000:6000/tcp
 ufw allow 5000:6000/udp
+ufw allow 10000:11000/tcp
+ufw allow 10000:11000/udp
+ufw allow 2000/tcp
+ufw allow 2000/udp
 ufw allow 1500/tcp
 ufw allow 1500/udp
 ufw allow 22/tcp

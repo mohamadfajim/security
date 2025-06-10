@@ -1,5 +1,10 @@
 ````
-
+ufw allow 1001/tcp
+ufw allow 1001/udp
+ufw allow 1002/tcp
+ufw allow 1002/udp
+ufw allow 1003/tcp
+ufw allow 1003/udp
 ufw allow 22/tcp
 ufw allow 22/udp
 ufw allow 2053/tcp

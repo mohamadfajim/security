@@ -5,6 +5,8 @@ ufw allow 2053/tcp
 ufw allow 2053/udp
 ufw allow 443/tcp
 ufw allow 443/udp
+ufw allow 444/tcp
+ufw allow 444/udp
 ufw allow 80/tcp
 ufw allow 80/udp
 ufw enable

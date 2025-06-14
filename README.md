@@ -13,6 +13,12 @@ ufw allow 3002/tcp
 ufw allow 3002/udp
 ufw allow 3003/tcp
 ufw allow 3003/udp
+ufw allow 301/tcp
+ufw allow 301/udp
+ufw allow 302/tcp
+ufw allow 302/udp
+ufw allow 303/tcp
+ufw allow 303/udp
 ufw allow 80/tcp
 ufw allow 80/udp
 ufw enable

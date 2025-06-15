@@ -7,18 +7,14 @@ ufw allow 443/tcp
 ufw allow 443/udp
 ufw allow 444/tcp
 ufw allow 444/udp
-ufw allow 3001/tcp
-ufw allow 3001/udp
-ufw allow 3002/tcp
-ufw allow 3002/udp
-ufw allow 3003/tcp
-ufw allow 3003/udp
-ufw allow 301/tcp
-ufw allow 301/udp
-ufw allow 302/tcp
-ufw allow 302/udp
-ufw allow 303/tcp
-ufw allow 303/udp
+ufw allow 3000:3100/tcp
+ufw allow 3000:3100/udp
+ufw allow 300:399/tcp
+ufw allow 300:399/udp
+ufw allow 4000:4100/tcp
+ufw allow 4000:4100/udp
+ufw allow 400:499/tcp
+ufw allow 400:499/udp
 ufw allow 80/tcp
 ufw allow 80/udp
 ufw enable

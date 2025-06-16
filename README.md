@@ -54,6 +54,7 @@ ufw deny out from any to 141.101.78.0/23
 ufw deny out from any to 173.245.48.0/20
 ufw deny out from any to 151.139.128.10
 ufw deny out from any to 192.0.0.1/24
+ufw enable
 
 ````
 

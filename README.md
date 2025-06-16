@@ -17,7 +17,6 @@ ufw allow 400:499/tcp
 ufw allow 400:499/udp
 ufw allow 80/tcp
 ufw allow 80/udp
-ufw enable
 
 ````
 

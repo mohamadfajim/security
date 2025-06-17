@@ -3,8 +3,12 @@ ufw allow 22/tcp
 ufw allow 22/udp
 ufw allow 2053/tcp
 ufw allow 2053/udp
-ufw allow 440:460/tcp
-ufw allow 440:460/udp
+ufw allow 333/tcp
+ufw allow 333/udp
+ufw allow 433/tcp
+ufw allow 433/udp
+ufw allow 533/tcp
+ufw allow 533/udp
 ufw allow 3000:3100/tcp
 ufw allow 3000:3100/udp
 ufw allow 300:399/tcp

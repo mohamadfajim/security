@@ -19,6 +19,10 @@ ufw allow 500:510/tcp
 ufw allow 500:510/udp
 ufw allow 5000:5010/tcp
 ufw allow 5000:5010/udp
+ufw allow 600:610/tcp
+ufw allow 600:610/udp
+ufw allow 6000:6010/tcp
+ufw allow 6000:6010/udp
 ufw allow 22/tcp
 ufw allow 22/udp
 ufw allow 2053/tcp

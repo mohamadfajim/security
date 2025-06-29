@@ -3,6 +3,12 @@ ufw allow 700:800/tcp
 ufw allow 700:800/udp
 ufw allow 7000:8000/tcp
 ufw allow 7000:8000/udp
+ufw allow 10000:10100/tcp
+ufw allow 10000:10100/udp
+ufw allow 20000:20100/tcp
+ufw allow 20000:20100/udp
+ufw allow 30000:30100/tcp
+ufw allow 30000:30100/udp
 ufw allow 22/tcp
 ufw allow 22/udp
 ufw allow 2053/tcp

@@ -9,8 +9,6 @@ ufw allow 22/tcp
 ufw allow 22/udp
 ufw allow 2053/tcp
 ufw allow 2053/udp
-ufw allow 433/tcp
-ufw allow 433/udp
 ufw allow 80/tcp
 ufw allow 80/udp
 ufw allow 443/tcp

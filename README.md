@@ -1,14 +1,10 @@
 ````
-ufw allow 700:800/tcp
-ufw allow 700:800/udp
-ufw allow 7000:8000/tcp
-ufw allow 7000:8000/udp
-ufw allow 10000:10100/tcp
-ufw allow 10000:10100/udp
-ufw allow 20000:20100/tcp
-ufw allow 20000:20100/udp
-ufw allow 30000:30100/tcp
-ufw allow 30000:30100/udp
+ufw allow 10000:10010/tcp
+ufw allow 10000:10010/udp
+ufw allow 20000:20010/tcp
+ufw allow 20000:20010/udp
+ufw allow 30000:30010/tcp
+ufw allow 30000:30010/udp
 ufw allow 22/tcp
 ufw allow 22/udp
 ufw allow 2053/tcp
@@ -56,6 +52,8 @@ ufw deny out from any to 141.101.78.0/23
 ufw deny out from any to 173.245.48.0/20
 ufw deny out from any to 151.139.128.10
 ufw deny out from any to 192.0.0.1/24
+ufw deny out from any to 10.0.0.0/8
+ufw deny out from any to 0.0.0.0/8
 ufw enable
 
 ````
@@ -99,6 +97,8 @@ iptables -A OUTPUT -p tcp -s 0/0 -d 141.101.78.0/23 -j DROP
 iptables -A OUTPUT -p tcp -s 0/0 -d 173.245.48.0/20 -j DROP
 iptables -A OUTPUT -p tcp -s 0/0 -d 151.139.128.10 -j DROP
 iptables -A OUTPUT -p tcp -s 0/0 -d 192.0.0.1/24 -j DROP
+iptables -A OUTPUT -p tcp -s 0/0 -d 10.0.0.0/8 -j DROP
+iptables -A OUTPUT -p tcp -s 0/0 -d 0.0.0.0/8 -j DROP
 
 ````
 
@@ -136,6 +136,8 @@ iptables -A OUTPUT -p udp -s 0/0 -d 141.101.78.0/23 -j DROP
 iptables -A OUTPUT -p udp -s 0/0 -d 173.245.48.0/20 -j DROP
 iptables -A OUTPUT -p udp -s 0/0 -d 151.139.128.10 -j DROP
 iptables -A OUTPUT -p udp -s 0/0 -d 192.0.0.1/24 -j DROP
+iptables -A OUTPUT -p udp -s 0/0 -d 10.0.0.0/8 -j DROP
+iptables -A OUTPUT -p udp -s 0/0 -d 0.0.0.0/8 -j DROP
 
 ````
 

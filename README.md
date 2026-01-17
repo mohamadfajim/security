@@ -7,6 +7,10 @@ ufw allow 30000:30010/tcp
 ufw allow 30000:30010/udp
 ufw allow 22/tcp
 ufw allow 22/udp
+ufw allow 2086/tcp
+ufw allow 2086/udp
+ufw allow 2082/tcp
+ufw allow 2082/udp
 ufw allow 2053/tcp
 ufw allow 2053/udp
 ufw allow 80/tcp

@@ -54,7 +54,6 @@ ufw deny out from any to 141.101.78.0/23
 ufw deny out from any to 173.245.48.0/20
 ufw deny out from any to 151.139.128.10
 ufw deny out from any to 192.0.0.1/24
-ufw deny out from any to 10.0.0.0/8
 ufw deny out from any to 0.0.0.0/8
 ufw enable
 
@@ -99,7 +98,6 @@ iptables -A OUTPUT -p tcp -s 0/0 -d 141.101.78.0/23 -j DROP
 iptables -A OUTPUT -p tcp -s 0/0 -d 173.245.48.0/20 -j DROP
 iptables -A OUTPUT -p tcp -s 0/0 -d 151.139.128.10 -j DROP
 iptables -A OUTPUT -p tcp -s 0/0 -d 192.0.0.1/24 -j DROP
-iptables -A OUTPUT -p tcp -s 0/0 -d 10.0.0.0/8 -j DROP
 iptables -A OUTPUT -p tcp -s 0/0 -d 0.0.0.0/8 -j DROP
 
 ````
@@ -138,7 +136,6 @@ iptables -A OUTPUT -p udp -s 0/0 -d 141.101.78.0/23 -j DROP
 iptables -A OUTPUT -p udp -s 0/0 -d 173.245.48.0/20 -j DROP
 iptables -A OUTPUT -p udp -s 0/0 -d 151.139.128.10 -j DROP
 iptables -A OUTPUT -p udp -s 0/0 -d 192.0.0.1/24 -j DROP
-iptables -A OUTPUT -p udp -s 0/0 -d 10.0.0.0/8 -j DROP
 iptables -A OUTPUT -p udp -s 0/0 -d 0.0.0.0/8 -j DROP
 
 ````
@@ -150,9 +147,5 @@ iptables-save
 
 
 ufw deny out from any to 10.0.0.0/8
-ufw deny out from any to 0.0.0.0/8
-
 iptables -A OUTPUT -p tcp -s 0/0 -d 10.0.0.0/8 -j DROP
-iptables -A OUTPUT -p tcp -s 0/0 -d 0.0.0.0/8 -j DROP
 iptables -A OUTPUT -p udp -s 0/0 -d 10.0.0.0/8 -j DROP
-iptables -A OUTPUT -p udp -s 0/0 -d 0.0.0.0/8 -j DROP

@@ -1,8 +1,8 @@
 ````
 ufw allow 1000:1010/tcp
 ufw allow 1000:1010/udp
-ufw allow 9000:9010/tcp
-ufw allow 9000:9010/udp
+ufw allow 9000:9050/tcp
+ufw allow 9000:9050/udp
 ufw allow 22/tcp
 ufw allow 22/udp
 ufw allow 2086/tcp

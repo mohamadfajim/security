@@ -17,6 +17,8 @@ ufw allow 443/tcp
 ufw allow 443/udp
 ufw allow 2070/tcp
 ufw allow 2070/udp
+ufw allow 2080/tcp
+ufw allow 2080/udp
 
 ````
 

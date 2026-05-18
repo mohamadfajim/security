@@ -1,8 +1,4 @@
 ````
-ufw allow 1000:1010/tcp
-ufw allow 1000:1010/udp
-ufw allow 9000:9050/tcp
-ufw allow 9000:9050/udp
 ufw allow 22/tcp
 ufw allow 22/udp
 ufw allow 2086/tcp
@@ -15,10 +11,14 @@ ufw allow 80/tcp
 ufw allow 80/udp
 ufw allow 443/tcp
 ufw allow 443/udp
-ufw allow 2070/tcp
-ufw allow 2070/udp
-ufw allow 2080/tcp
-ufw allow 2080/udp
+ufw allow 8080/tcp
+ufw allow 8080/udp
+ufw allow 8880/tcp
+ufw allow 8880/udp
+ufw allow 2052/tcp
+ufw allow 2052/udp
+ufw allow 2095/tcp
+ufw allow 2095/udp
 
 ````
 

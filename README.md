@@ -19,6 +19,10 @@ ufw allow 2052/tcp
 ufw allow 2052/udp
 ufw allow 2095/tcp
 ufw allow 2095/udp
+ufw allow 8080/tcp
+ufw allow 8080/udp
+ufw allow 2052/tcp
+ufw allow 2052/udp
 
 ````
 
